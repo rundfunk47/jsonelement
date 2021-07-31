@@ -20,7 +20,10 @@ let package = Package(
         .target(
             name: "JSONElement",
             dependencies: [],
-            path: "JSONElement"
+            path: "JSONElement",
+            exclude: [
+                "Info.plist"
+            ]
         ),
         .testTarget(
             name: "JSONElementTests",
