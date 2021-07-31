@@ -21,6 +21,8 @@
 		EB1F4A72268C908D00C1C709 /* JSONElementValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F4A71268C908D00C1C709 /* JSONElementValueTests.swift */; };
 		EB1F4A74268C939F00C1C709 /* JSONElementCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F4A73268C939F00C1C709 /* JSONElementCodableTests.swift */; };
 		EB1F4A76268C962E00C1C709 /* JSONElementCodedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1F4A75268C962E00C1C709 /* JSONElementCodedTests.swift */; };
+		EB6DB29926B57E5C00F62737 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB29826B57E5C00F62737 /* Array+Safe.swift */; };
+		EB6DB29B26B57F2B00F62737 /* JSONElement+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DB29A26B57F2B00F62737 /* JSONElement+Subscript.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		EB1F4A71268C908D00C1C709 /* JSONElementValueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONElementValueTests.swift; sourceTree = "<group>"; };
 		EB1F4A73268C939F00C1C709 /* JSONElementCodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONElementCodableTests.swift; sourceTree = "<group>"; };
 		EB1F4A75268C962E00C1C709 /* JSONElementCodedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONElementCodedTests.swift; sourceTree = "<group>"; };
+		EB6DB29826B57E5C00F62737 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
+		EB6DB29A26B57F2B00F62737 /* JSONElement+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONElement+Subscript.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			children = (
 				EB1F4A45268C7D6600C1C709 /* Info.plist */,
 				EB1F4A5B268C7DF400C1C709 /* JSONElement.swift */,
+				EB6DB29A26B57F2B00F62737 /* JSONElement+Subscript.swift */,
 				EB1F4A5D268C82E200C1C709 /* JSONElement+String.swift */,
 				EB1F4A61268C84E100C1C709 /* JSONElement+Hashable.swift */,
 				EB1F4A63268C85D800C1C709 /* JSONElement+Value.swift */,
@@ -102,6 +107,7 @@
 				EB1F4A69268C884700C1C709 /* JSONElement+Codable.swift */,
 				EB1F4A6B268C8A2200C1C709 /* JSONElement+Coded.swift */,
 				EB1F4A6D268C8EFF00C1C709 /* NSNumber+Type.swift */,
+				EB6DB29826B57E5C00F62737 /* Array+Safe.swift */,
 			);
 			path = JSONElement;
 			sourceTree = "<group>";
@@ -109,12 +115,12 @@
 		EB1F4A4E268C7D6600C1C709 /* JSONElementTests */ = {
 			isa = PBXGroup;
 			children = (
+				EB1F4A51268C7D6600C1C709 /* Info.plist */,
 				EB1F4A4F268C7D6600C1C709 /* JSONElementStringTests.swift */,
 				EB1F4A6F268C8F3000C1C709 /* JSONElementEquatableTests.swift */,
 				EB1F4A71268C908D00C1C709 /* JSONElementValueTests.swift */,
 				EB1F4A73268C939F00C1C709 /* JSONElementCodableTests.swift */,
 				EB1F4A75268C962E00C1C709 /* JSONElementCodedTests.swift */,
-				EB1F4A51268C7D6600C1C709 /* Info.plist */,
 			);
 			path = JSONElementTests;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 				EB1F4A6C268C8A2200C1C709 /* JSONElement+Coded.swift in Sources */,
 				EB1F4A62268C84E100C1C709 /* JSONElement+Hashable.swift in Sources */,
 				EB1F4A6A268C884700C1C709 /* JSONElement+Codable.swift in Sources */,
+				EB6DB29926B57E5C00F62737 /* Array+Safe.swift in Sources */,
 				EB1F4A68268C864700C1C709 /* JSONElement+Equatable.swift in Sources */,
 				EB1F4A64268C85D800C1C709 /* JSONElement+Value.swift in Sources */,
+				EB6DB29B26B57F2B00F62737 /* JSONElement+Subscript.swift in Sources */,
 				EB1F4A6E268C8EFF00C1C709 /* NSNumber+Type.swift in Sources */,
 				EB1F4A5C268C7DF400C1C709 /* JSONElement.swift in Sources */,
 				EB1F4A5E268C82E200C1C709 /* JSONElement+String.swift in Sources */,

@@ -16,13 +16,4 @@ public enum JSONElement {
     case array(Array<JSONElement>)
     case dictionary(Dictionary<String, JSONElement>)
     case null
-    
-    subscript(dynamicMember string: String) -> JSONElement? {
-        switch self {
-        case .dictionary(let dictionary):
-            return dictionary[string]
-        default:
-            return nil
-        }
-    }
 }
