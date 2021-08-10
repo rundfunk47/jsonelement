@@ -7,11 +7,6 @@ let package = Package(
     products: [
         .library(
             name: "JSONElement",
-            type: .dynamic,
-            targets: ["JSONElement"]
-        ),
-        .library(
-            name: "JSONElement (Static)",
             targets: ["JSONElement"]
         )
     ],
