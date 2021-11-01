@@ -38,7 +38,7 @@ let json = try JSONElement(stringRepresentation: "\"null\"")
 
 ```swift
 // Initialize using value
-let json = try JSONElement(NSNull())
+let json = try JSONElement(())
 ```
 
 You can also turn encodable objects to JSONElement:

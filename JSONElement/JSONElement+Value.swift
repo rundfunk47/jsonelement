@@ -35,7 +35,7 @@ public extension JSONElement {
                 self = .array(try array.map { try JSONElement($0) })
             } else if let dictionary = inputValue as? Dictionary<String, Any> {
                 self = .dictionary(try dictionary.mapValues( { try JSONElement($0) } ))
-            } else if inputValue is NSNull {
+            } else if inputValue is NSNull || inputValue is Void {
                 self = .null
             } else {
                 throw JSONElementValueError.cannotBeRepresented(inputValue)
@@ -58,7 +58,7 @@ public extension JSONElement {
         case .dictionary(let dictionary):
             return dictionary.mapValues { $0.value }
         case .null:
-            return NSNull()
+            return ()
         }
     }
 }
